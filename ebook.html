@@ -1,0 +1,583 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Cardio: The Power of Movement</title>
+
+  <!-- Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Inter:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet">
+
+  <!-- Link to external CSS -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <!-- Progress Bar -->
+  <div class="progress-bar" id="progressBar"></div>
+
+  <div class="site" role="document">
+    <header>
+      <div class="header-bg"></div>
+      <div class="header-content">
+        <div class="logo" aria-hidden="true">
+          <img
+            src="https://images.unsplash.com/photo-1508609349937-5ec4ae374ebf?q=80&w=800&auto=format&fit=crop&ixlib=rb-4.0.3&s=3c9a9e5b476b0d9f3a2d2d9f9a9d4c9b"
+            alt="">
+          <div class="logo-overlay"></div>
+        </div>
+        <div class="title">
+          <div class="badge">Fitness Guide 2025</div>
+          <h1>Cardio: The Power of Movement</h1>
+          <div class="meta">A Practical Guide to Building Endurance and Heart Health</div>
+          <div class="author">
+            <span class="author-icon">✍️</span>
+            <span>CardioGroup • ESPRIT Tunisia</span>
+          </div>
+          <div class="actions">
+            <a class="btn primary" href="#workout-plan">
+              <span class="btn-icon">🏃</span>
+              Start Your Journey
+            </a>
+            <a class="btn secondary" href="#survey-insights">
+              <span class="btn-icon">📊</span>
+              View Insights
+            </a>
+            <button id="buildPdfBtn" class="btn tertiary" type="button" title="Compile LaTeX to PDF and download">📄
+              Build PDF</button>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <nav class="toc" aria-label="Table of contents">
+        <div class="toc-header">
+          <span class="toc-icon">📚</span>
+          <h2>Contents</h2>
+        </div>
+        <ol>
+          <li><a href="#introduction"><span class="toc-number">01</span> Introduction</a></li>
+          <li><a href="#survey-insights"><span class="toc-number">02</span> Survey Insights</a></li>
+          <li><a href="#workout-plan"><span class="toc-number">03</span> Workout Plan</a></li>
+          <li><a href="#safety-tips"><span class="toc-number">04</span> Safety Tips</a></li>
+          <li><a href="#interview"><span class="toc-number">05</span> Interview Highlights</a></li>
+          <li><a href="#visuals"><span class="toc-number">06</span> Visuals & Resources</a></li>
+          <li><a href="#conclusion"><span class="toc-number">07</span> Conclusion</a></li>
+          <li><a href="#references"><span class="toc-number">08</span> References</a></li>
+        </ol>
+      </nav>
+
+      <!-- Introduction -->
+      <section id="introduction" class="fade-in">
+        <div class="section-label">Chapter 01</div>
+        <h2>Introduction</h2>
+
+        <div class="intro-hero">
+          <p class="lead">Cardiovascular exercise, or cardio, involves activities that elevate your heart rate and
+            breathing for sustained periods, engaging multiple muscle groups and promoting overall health. This guide is
+            designed to help readers understand the importance of cardio, offering structured routines, safety advice,
+            and resources to make exercise approachable and effective. Whether you are just starting out or looking to
+            intensify your workouts, this book provides practical strategies to improve heart and lung function,
+            increase stamina, manage stress, and enhance mental well-being.</p>
+        </div>
+
+        <div class="benefits-grid">
+          <div class="benefit-card">
+            <div class="benefit-icon">❤️</div>
+            <h3>Heart & Lung Health</h3>
+            <p>Regular cardio strengthens the cardiovascular system, improves circulation, and boosts lung capacity,
+              reducing risks of heart disease and respiratory issues.</p>
+          </div>
+          <div class="benefit-card">
+            <div class="benefit-icon">⚡</div>
+            <h3>Energy & Endurance</h3>
+            <p>Consistent cardio increases stamina, allowing you to sustain activity longer without fatigue and
+              improving energy levels for everyday life.</p>
+          </div>
+          <div class="benefit-card">
+            <div class="benefit-icon">🧠</div>
+            <h3>Mental Wellness</h3>
+            <p>Engaging in cardio triggers the release of endorphins, helping reduce stress, anxiety, and depression
+              while improving focus and mental clarity.</p>
+          </div>
+          <div class="benefit-card">
+            <div class="benefit-icon">⚖️</div>
+            <h3>Weight & Sleep</h3>
+            <p>Regular exercise supports healthy metabolism, weight management, and enhances the quality of sleep, which
+              is critical for recovery and overall well-being.</p>
+          </div>
+        </div>
+
+        <div class="callout">
+          <div class="callout-icon">🎯</div>
+          <div>
+            <h3>Purpose & Outcomes</h3>
+            <p>This e-book equips readers with structured cardio plans tailored to different levels, insights into
+              overcoming common barriers, and safety strategies. By following these guidelines, readers can
+              progressively improve fitness, develop a consistent habit, and experience the physical and mental benefits
+              of regular cardiovascular exercise.</p>
+          </div>
+        </div>
+
+        <div class="image-wrapper">
+          <img src="indoor-cardio-workout.jpg" alt="Indoor fitness cardio example">
+          <div class="image-caption">Indoor cardio example</div>
+        </div>
+      </section>
+
+      <!-- Survey -->
+      <section id="survey-insights" class="fade-in">
+        <div class="section-label">Chapter 02</div>
+        <h2>Survey Insights</h2>
+
+        <div class="survey-intro">
+          <p>To better understand cardio habits, a survey was conducted with 50 participants aged 18–40. The
+            questionnaire focused on how often individuals engage in cardiovascular exercise, their motivation levels,
+            and obstacles they face. All responses were anonymous, offering a clear snapshot of current trends and
+            common challenges.</p>
+        </div>
+
+        <div class="stats-grid">
+          <div class="stat-card primary">
+            <div class="stat-number">60%</div>
+            <div class="stat-label">Exercise at least twice per week</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-number">25%</div>
+            <div class="stat-label">Cite time constraints as a barrier</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-number">10%</div>
+            <div class="stat-label">Report low motivation</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-number">5%</div>
+            <div class="stat-label">Limited access to space or equipment</div>
+          </div>
+        </div>
+
+        <div class="insight-box">
+          <h3>💡 Key Insight</h3>
+          <p>The survey shows that the majority of people face time constraints and motivational challenges as primary
+            barriers to regular cardio. Many participants mentioned that structured plans, accountability partners, or
+            fitness tracking apps could significantly improve their consistency and adherence to workouts.</p>
+        </div>
+
+        <div class="image-wrapper">
+          <canvas id="surveyChart" aria-label="Survey results chart" role="img"></canvas>
+          <div class="image-caption">Visual: Survey results (interactive chart)</div>
+        </div>
+      </section>
+
+      <!-- Workout plan -->
+      <section id="workout-plan" class="fade-in highlight-section">
+        <div class="section-label">Chapter 03</div>
+        <h2>Workout Plan</h2>
+        <p class="section-intro">This chapter presents three levels of cardio routines—Beginner, Intermediate, and
+          Advanced. Each plan includes indoor and outdoor options, so you can adapt exercises to your environment,
+          equipment availability, and personal goals. Progression is key: start gradually and increase intensity and
+          duration over time to safely boost endurance and fitness.</p>
+
+        <div class="plan-grid">
+          <a href="beginner.html" class="plan-card beginner"
+            style="text-decoration: none; color: inherit; display: block;">
+            <div class="plan-header">
+              <div class="plan-icon">🌱</div>
+              <h3>Beginner</h3>
+              <div class="plan-badge">Start Here</div>
+            </div>
+            <p>For those new to cardio, start with gentle activities that raise your heart rate without causing
+              excessive strain. Walking for 20–30 minutes three times a week builds a strong foundation. Alternating
+              between walking and light jogging improves stamina gradually. Indoor options like low-impact marching or
+              beginner dance workouts provide variety. Light bodyweight circuits—step-ups, squats, and simple core
+              exercises—can complement cardio while building strength.</p>
+          </a>
+
+          <a href="intermediate.html" class="plan-card intermediate"
+            style="text-decoration: none; color: inherit; display: block;">
+            <div class="plan-header">
+              <div class="plan-icon">🔥</div>
+              <h3>Intermediate</h3>
+              <div class="plan-badge">Level Up</div>
+            </div>
+            <p>Intermediate routines are designed for those with some cardio experience. Jogging or cycling 30–45
+              minutes, four to five times per week, enhances endurance. Adding jump rope intervals or 20–40 minutes of
+              dance cardio increases heart rate variability and overall fitness. Interval sessions, alternating between
+              30–45 seconds of effort and 60–90 seconds of recovery, improve cardiovascular efficiency while maintaining
+              variety to stay engaged.</p>
+          </a>
+
+          <a href="advanced.html" class="plan-card advanced"
+            style="text-decoration: none; color: inherit; display: block;">
+            <div class="plan-header">
+              <div class="plan-icon">⚡</div>
+              <h3>Advanced</h3>
+              <div class="plan-badge">Max Power</div>
+            </div>
+            <p>Advanced programs are for experienced individuals looking to maximize cardio benefits. High-Intensity
+              Interval Training (HIIT) for 20–25 minutes, sprint repeats, and endurance sessions of 60+ minutes are
+              effective ways to challenge the body. Combining running, cycling, and rowing creates a cross-training
+              approach that reduces repetitive stress and improves overall athletic performance. Always monitor
+              intensity and allow sufficient recovery.</p>
+          </a>
+
+          <div class="plan-card schedule">
+            <div class="plan-header">
+              <div class="plan-icon">📅</div>
+              <h3>Sample Weekly Schedule</h3>
+            </div>
+            <p>A balanced weekly plan includes a mix of cardio intensity, recovery, and mobility work. For example,
+              jogging or cycling on Monday, light recovery walks on Tuesday, HIIT sessions midweek, and endurance
+              activities or sprint intervals later in the week. Active rest days with stretching or yoga help the body
+              recover while maintaining routine consistency.</p>
+          </div>
+        </div>
+
+        <div class="image-wrapper">
+          <img src="Fall-running-leaves.jpg" alt="Running outdoors">
+          <div class="image-caption">Outdoor running</div>
+        </div>
+
+        <div class="video-wrapper">
+          <video controls width="100%" height="auto" aria-label="Stadium running example">
+            <source src="stade run.mp4" type="video/mp4">
+            Your browser does not support the video tag. Please download the video file to watch it.
+          </video>
+          <div class="image-caption">Stadium running workout example</div>
+        </div>
+      </section>
+
+      <!-- Safety -->
+      <section id="safety-tips" class="fade-in">
+        <div class="section-label">Chapter 04</div>
+        <h2>Safety Tips</h2>
+
+        <div class="safety-grid">
+          <div class="safety-card">
+            <div class="safety-icon">🔥</div>
+            <h3>Warm-up & Cool-down</h3>
+            <p>Warm up 5–10 minutes with dynamic movements; cool down with slow walking and static stretches to reduce
+              soreness.</p>
+          </div>
+
+          <div class="safety-card">
+            <div class="safety-icon">💧</div>
+            <h3>Hydration & Nutrition</h3>
+            <ul>
+              <li>Hydrate before, during (if long session), and after exercise</li>
+              <li>Light snack with carbs+protein 1–2 hours before intense sessions</li>
+            </ul>
+          </div>
+
+          <div class="safety-card">
+            <div class="safety-icon">⚠️</div>
+            <h3>Common Mistakes</h3>
+            <ul>
+              <li>Skipping warm-up/cool-down</li>
+              <li>Rushing progress—increase intensity gradually</li>
+              <li>Neglecting rest days</li>
+              <li>Poor form—prioritize technique</li>
+            </ul>
+          </div>
+
+          <div class="safety-card">
+            <div class="safety-icon">🏥</div>
+            <h3>Special Considerations</h3>
+            <p>If you have heart, respiratory or joint conditions consult your doctor. Use Rate of Perceived Exertion
+              (RPE) or heart-rate zones as guidance.</p>
+          </div>
+        </div>
+
+        <div class="image-wrapper">
+          <img src="beginner-stretches.jpg" alt="Stretching">
+          <div class="image-caption">Stretching</div>
+        </div>
+      </section>
+
+      <!-- Interview -->
+      <section id="interview" class="fade-in">
+        <div class="section-label">Chapter 05</div>
+        <h2>Interview Highlights</h2>
+
+        <div class="video-wrapper">
+          <video controls width="100%" height="auto" aria-label="Interview video">
+            <source src="stade run.mp4" type="video/mp4">
+            Your browser does not support the video tag. Please download the video file to watch it.
+          </video>
+          <div class="image-caption">Interview with fitness expert — Watch the full discussion</div>
+        </div>
+
+        <div class="interview-template">
+          <h3>Key Takeaways</h3>
+          <div class="template-steps">
+            <div class="step">
+              <span class="step-number">1</span>
+              <div>
+                <strong>Consistency Over Intensity</strong>
+                <p>Regular moderate cardio beats occasional intense sessions for long-term results.</p>
+              </div>
+            </div>
+            <div class="step">
+              <span class="step-number">2</span>
+              <div>
+                <strong>Find Your Why</strong>
+                <p>Identify personal motivation—health, stress relief, or social connection—to stay committed.</p>
+              </div>
+            </div>
+            <div class="step">
+              <span class="step-number">3</span>
+              <div>
+                <strong>Progressive Overload</strong>
+                <p>Gradually increase duration or intensity to avoid plateaus and injury.</p>
+              </div>
+            </div>
+            <div class="step">
+              <span class="step-number">4</span>
+              <div>
+                <strong>Recovery Matters</strong>
+                <p>Rest days and proper nutrition are as important as the workout itself.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Visuals & resources -->
+      <section id="visuals" class="fade-in">
+        <div class="section-label">Chapter 06</div>
+        <h2>Visuals & Resources</h2>
+
+        <div class="resource-category">
+          <h3>📸 Exercise Images & GIFs</h3>
+          <p>Examples of image sources (free and high-quality). Click to open the source and download images if you want
+            local copies for offline use.</p>
+          <div class="resource-links">
+
+            <a href="https://www.verywellfit.com/" target="_blank" rel="noopener" class="resource-link">
+              <span class="link-icon">💪</span>
+              <div>
+                <strong>Verywell Fit</strong>
+                <span>Exercise library & tutorials</span>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <div class="resource-category">
+          <h3>📱 Recommended Apps & Tools</h3>
+          <div class="app-grid">
+            <div class="app-card">
+              <div class="app-icon">🏃</div>
+              <strong>Strava</strong>
+              <p>Outdoor run & ride tracking</p>
+            </div>
+            <div class="app-card">
+              <div class="app-icon">✔️</div>
+              <strong>Nike Training Club</strong>
+              <p>Guided training plans</p>
+            </div>
+            <div class="app-card">
+              <div class="app-icon">⏱️</div>
+              <strong>Tabata Timer</strong>
+              <p>Structure intervals</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="resource-category">
+          <h3>🔗 Helpful Links</h3>
+          <div class="resource-links">
+            <a href="https://www.who.int/news-room/fact-sheets/detail/physical-activity" target="_blank" rel="noopener"
+              class="resource-link">
+              <span class="link-icon">🌍</span>
+              <div>
+                <strong>WHO Physical Activity Guidelines</strong>
+                <span>Official health recommendations</span>
+              </div>
+            </a>
+            <a href="https://www.heart.org" target="_blank" rel="noopener" class="resource-link">
+              <span class="link-icon">❤️</span>
+              <div>
+                <strong>American Heart Association</strong>
+                <span>Cardiovascular health resources</span>
+              </div>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Conclusion -->
+      <section id="conclusion" class="fade-in">
+        <div class="section-label">Chapter 07</div>
+        <h2>Conclusion</h2>
+        <p class="lead">Cardio is a practical and effective tool for improving physical and mental health. Stay
+          consistent, progress gradually, and prioritize recovery. Small daily improvements add up to meaningful
+          long-term gains.</p>
+
+        <div class="quote-card">
+          <div class="quote-icon">💪</div>
+          <blockquote>"Your heart is your strongest muscle — train it with care."</blockquote>
+        </div>
+
+        <div class="cta-box">
+          <h3>Ready to Start Your Journey?</h3>
+          <p>Choose your level and begin today. Remember: consistency beats intensity.</p>
+          <a href="#workout-plan" class="btn primary large">View Workout Plans</a>
+        </div>
+      </section>
+
+      <!-- References -->
+      <section id="references" class="fade-in">
+        <div class="section-label">Chapter 08</div>
+        <h2>References</h2>
+        <ol class="references-list">
+          <li>
+            <span class="ref-number">[1]</span>
+            World Health Organization. (2023). <em>Physical activity guidelines</em>.
+            <a href="https://www.who.int" target="_blank" rel="noopener">who.int</a>
+          </li>
+          <li>
+            <span class="ref-number">[2]</span>
+            American Heart Association. (2024). <em>Cardiovascular health resources</em>.
+            <a href="https://www.heart.org" target="_blank" rel="noopener">heart.org</a>
+          </li>
+          <li>
+            <span class="ref-number">[3]</span>
+            Smith, J. (2022). <em>Cardio Training and Endurance Improvement</em>. (sample citation)
+          </li>
+        </ol>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer-content">
+        <div class="footer-left">
+          <strong>CardioGroup</strong>
+          <span class="separator">•</span>
+          <span>ESPRIT Tunisia</span>
+          <span class="separator">•</span>
+          <span>October 2025</span>
+        </div>
+        <div class="footer-right">
+          <a href="#introduction" class="footer-link">Back to Top ↑</a>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+  <script>
+    // Load and render survey chart
+    function renderSurveyChart() {
+      const ctx = document.getElementById('surveyChart');
+      if (!ctx || !window.Chart) return;
+
+      const data = {
+        labels: ['2+ times/week', 'Time barrier', 'Low motivation', 'Space/equipment'],
+        datasets: [{
+          label: 'Percentage',
+          data: [60, 25, 10, 5],
+          backgroundColor: ['#2563eb', '#60a5fa', '#93c5fd', '#bfdbfe'],
+          borderColor: '#1e3a8a',
+          borderWidth: 1,
+          borderRadius: 6,
+        }]
+      };
+
+      new Chart(ctx, {
+        type: 'bar',
+        data,
+        options: {
+          responsive: true,
+          maintainAspectRatio: true,
+          indexAxis: 'x',
+          plugins: {
+            legend: { display: false },
+            tooltip: {
+              callbacks: {
+                label: (item) => `${item.raw}%`
+              }
+            }
+          },
+          scales: {
+            y: {
+              beginAtZero: true,
+              ticks: {
+                callback: (v) => v + '%'
+              },
+              max: 100
+            }
+          }
+        }
+      });
+    }
+
+    // Progress bar
+    window.addEventListener('scroll', () => {
+      const winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+      const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+      const scrolled = (winScroll / height) * 100;
+      document.getElementById('progressBar').style.width = scrolled + '%';
+    });
+
+    // Fade in animation on scroll
+    const observerOptions = {
+      threshold: 0.1,
+      rootMargin: '0px 0px -50px 0px'
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        }
+      });
+    }, observerOptions);
+
+    document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+
+    // Initialize chart when DOM is ready
+    if (document.readyState === 'loading') {
+      document.addEventListener('DOMContentLoaded', renderSurveyChart);
+    } else {
+      renderSurveyChart();
+    }
+  </script>
+  <script>
+    // Build PDF button: download ebook.pdf
+    (function () {
+      const btn = document.getElementById('buildPdfBtn');
+      if (!btn) return;
+
+      btn.addEventListener('click', async () => {
+        btn.disabled = true;
+        btn.textContent = '⏳ Downloading...';
+        try {
+          const resp = await fetch('ebook.pdf');
+          if (!resp.ok) throw new Error('Failed to fetch ebook.pdf (HTTP ' + resp.status + ')');
+          const blob = await resp.blob();
+          const url = URL.createObjectURL(blob);
+          const a = document.createElement('a');
+          a.href = url;
+          a.download = 'ebook.pdf';
+          document.body.appendChild(a);
+          a.click();
+          a.remove();
+          URL.revokeObjectURL(url);
+        } catch (err) {
+          console.error('Download failed:', err);
+          alert('Error downloading PDF: ' + err.message);
+        } finally {
+          btn.disabled = false;
+          btn.textContent = '📄 Build PDF';
+        }
+      });
+    })();
+  </script>
+</body>
+
+</html>
